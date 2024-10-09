@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authorization</title>
+  <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body class="authorization">
+  <div class="auth-container">
+    <div class="logo">🤩SearchThings🤩</div>
+
+    <div class="auth-form-container" id="login-form">
+      <h2>Авторизация</h2>
+      <form id="auth-form" method="post">
+        <div class="form-group">
+          <label for="username">Имя пользователя:</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Пароль:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Войти</button>
+      </form>
+      <p id="switch-form">Нет аккаунта? <a href="#" onclick="switchForm('register')">Зарегистрируйтесь</a></p>
+    </div>
+
+    <div class="auth-form-container" id="register-form" style="display: none;">
+      <h2>Регистрация</h2>
+      <form method="post">
+        <div class="form-group">
+          <label for="username">Имя пользователя:</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Пароль:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="password-confirm">Повторите пароль:</label>
+          <input type="password" id="password-confirm" name="password-confirm" required>
+        </div>
+        <button type="submit">Зарегистрироваться</button>
+      </form>
+      <p id="switch-form">Уже есть аккаунт? <a href="#" onclick="switchForm('login')">Войдите</a></p>
+    </div>
+    <a href="{{ url_for('about_button') }}">
+        <button class="about-button">О нас</button>
+    </a>
+  </div>
+  <script src="../static/js/auth.js"></script>
+</body>
+</html>

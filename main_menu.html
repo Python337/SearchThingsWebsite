@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SearchThings</title>
+  <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body class="main_page">
+  <header class="navigation_bar">
+    <nav class="buttons_navigation_bar">
+      <button class="navbar-logo3">🤩SearchThings🤩</button>
+      <div class="navbar-main">Главная</div>
+      <button class="nav-top">TOP-10🔥</button>
+      <button class="nav-profile">Мой профиль</button>
+      <button class="glow-on-hover" type="button">🔄 фона</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="search-bar">
+      <input type="text" id="search-input" placeholder="Введите запрос...">
+      <button id="search-button">🔍🔍🔍</button>
+    </section>
+    <div class="search-text" style="transform: rotate(-10deg);">In an eternal search...</div>
+
+    <section class="products">
+      <div class="product-row">
+        <div class="product-item1">
+          <a href="{{ url_for('shovel') }}">
+            <img src="/home/user777/Загрузки/Лопата Fiskars.webp" width="200" height="200" alt="Лопата">
+            <h3>Лопата Fiskars Solid TM</h3>
+          </a>
+        </div>
+        <div class="product-item2">
+          <a href="{{ url_for('screen') }}">
+            <img src="/home/user777/Загрузки/Монитор LG.webp" width="200" height="200" alt="Монитор">
+            <h3>Монитор LG UltraGear 27"</h3>
+          </a>
+        </div>
+      </div>
+
+      <div class="product-row">
+        <div class="product-item3">
+          <a href="https://www.muztorg.ru/produсt/A096552?utm_source=yd&utm_medium=cpc&utm_term=&utm_campaign=smart-shopping-yandex-69863387&utm_content=v2%7C%7C11583585214%7C%7C2194379%7C%7C%7C%7C2%7C%7Cpremium%7C%7Cnone%7C%7Csearch%7C%7Cno&yclid=13533368254049288191">
+            <img src="/home/user777/Загрузки/Тарелка Zildjian.jpg" width="200" height="200" alt="Тарелка Zildjian">
+            <h3>Тарелка Ride ZILDJIAN 20'</h3>
+          </a>
+        </div>
+        <div class="product-item4">
+          <a href="https://www.wildberries.ru/catalog/133030253/detail.aspx">
+            <img src="/home/user777/Загрузки/коврик для мыши.png" width="200" height="200" alt="Коврик для мыши">
+            <h3>Коврик для мыши (ковёр)</h3>
+          </a>
+        </div>
+      </div>
+
+      <div class="product-row">
+        <div class="product-item5">
+          <a href="https://market.yandex.ru/product--gsb-180-li-601-9f8-323/501087011?sku=100702191122&uniqueId=39375547&do-waremd5=20KOlxyESfwUIvand-7kkg&sponsored=1">
+            <img src="/home/user777/Загрузки/шуруповёрт Bosch.webp" width="200" height="200" alt="Шуруповёрт Bosch">
+            <h3> Шуруповёрт BOSCH GSB 180-LI</h3>
+          </a>
+        </div>
+        <div class="product-item6">
+          <a href="https://online.metro-cc.ru/products/harry-039s-american-sandwich-pshenichnyj-470g?ysclid=m1ny3c4gaa200227111">
+            <img src="/home/user777/Загрузки/Хлеб Harris.webp" width="200" height="200" alt="Хлеб Harris">
+            <h3>Хлеб тостовый Harris</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../static/js/auth.js"></script>
+</body>
+</html>
